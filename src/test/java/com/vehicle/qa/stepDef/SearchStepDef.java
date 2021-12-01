@@ -1,5 +1,6 @@
 package com.vehicle.qa.stepDef;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import com.vehicle.qa.pageObjects.HomePage;
 import com.vehicle.qa.pageObjects.ResultsPage;
 import cucumber.api.java.en.And;
@@ -15,11 +16,13 @@ public class SearchStepDef {
     @Given("^I am on Homepage$")
     public void iAmOnHomepage() {
         String actualUrl = resultsPage.getUrl();
+        System.out.println(actualUrl);
         assertThat(actualUrl, Matchers.endsWith("co.uk/"));
     }
 
     @When("^I enter the vehicle Registration Number \"([^\"]*)\"$")
     public void iEnterTheVehicleRegistrationNumber(String regNumber) {
+        System.out.println(regNumber);
         homePage.customerEnterRegistrationNumber(regNumber);
     }
 
