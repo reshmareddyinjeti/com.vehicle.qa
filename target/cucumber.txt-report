@@ -1,0 +1,11 @@
+@smoke
+Feature: Search Vehicle
+  As a end user
+  I Want to check vehicle existence
+  So That i can see the respective results
+
+  Scenario: Vehicle Registration                           [90m# search.feature:7[0m
+    [32mGiven [0m[32mI am on Homepage[0m                                 [90m# SearchStepDef.iAmOnHomepage()[0m
+    [32mWhen [0m[32mI enter the vehicle Registration Number "[0m[32m[1mOV12UYY[0m[32m"[0m [90m# SearchStepDef.iEnterTheVehicleRegistrationNumber(String)[0m
+    [32mAnd [0m[32mI click the Find vehicle[0m                           [90m# SearchStepDef.iClickTheFindVehicle()[0m
+    [32mThen [0m[32mI should see the respective results successfully.[0m [90m# SearchStepDef.iShouldSeeTheRespectiveResultsSuccessfully()[0m

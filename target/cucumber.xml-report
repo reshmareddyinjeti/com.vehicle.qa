@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.459608">
+<testcase classname="Search Vehicle" name="Vehicle Registration" time="13.459608">
+<system-out><![CDATA[Given I am on Homepage......................................................passed
+When I enter the vehicle Registration Number "OV12UYY"......................passed
+And I click the Find vehicle................................................passed
+Then I should see the respective results successfully.......................passed
+]]></system-out>
+</testcase>
+</testsuite>
