@@ -1,0 +1,104 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10133798500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Vehicle Registration",
+        "description": "",
+        "id": "search-vehicle;vehicle-registration",
+        "after": [
+          {
+            "result": {
+              "duration": 2357683300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 333537400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on Homepage",
+            "match": {
+              "location": "SearchStepDef.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250570600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter the vehicle Registration Number \"OV12UYY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OV12UYY",
+                  "offset": 41
+                }
+              ],
+              "location": "SearchStepDef.iEnterTheVehicleRegistrationNumber(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130094200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click the Find vehicle",
+            "match": {
+              "location": "SearchStepDef.iClickTheFindVehicle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253924200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the respective results successfully.",
+            "match": {
+              "location": "SearchStepDef.iShouldSeeTheRespectiveResultsSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search Vehicle",
+    "description": "As a end user\r\nI Want to check vehicle existence\r\nSo That i can see the respective results",
+    "id": "search-vehicle",
+    "keyword": "Feature",
+    "uri": "search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
+  }
+]
